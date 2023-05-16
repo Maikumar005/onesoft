@@ -40,11 +40,10 @@ public Bike getMin() {
 public List<Bike>getByRange(@PathVariable int a,@PathVariable int b){
 	return bs.getByRange(a,b);
 }
-@GetMapping("/getsecmax")
+@GetMapping("/getSecond")
 public Bike getsecmax() {
 	return bs.getSecMax();
 }
-
 @GetMapping("/getsecmin")
 public Bike getsecmin() {
 	return bs.getSecMin();
